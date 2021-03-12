@@ -4,8 +4,7 @@ public class MergeSort {
     // merges two sub arrays of arr[], first sub array is arr[first..m]
     // second sub array is arr[m+1..last]
 
-    public static void merge(int arr[], int first, int m, int last)
-    {
+    public static void merge(int arr[], int first, int m, int last) {
         // Find sizes of two sub arrays to be merged
         int n1 = m - first + 1;
         int n2 = last - m;

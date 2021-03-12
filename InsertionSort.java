@@ -1,12 +1,12 @@
 public class InsertionSort {
 
-    public static void sort(int[] nums) {
+    public static void sort(double [] nums) {
 
         int n = nums.length;
 
         for (int i=1; i <= n-1; i++) {
 
-            int key = nums[i];
+            double key = nums[i];
             int j = i-1;
 
             //Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position

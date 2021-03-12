@@ -6,7 +6,7 @@ public class Test {
 
     public static void main(String[] args) throws InterruptedException {
 
-        int nums[] = new int[100000]; // test array
+        double nums[] = new double[20000]; // test array
 
         for (int i=0; i<nums.length; i++){
 
@@ -19,19 +19,19 @@ public class Test {
         }
 
         System.out.println("Nums before Quick sort: ");
-        //System.out.println(Arrays.toString(nums));
+        // System.out.println(Arrays.toString(nums));
 
         long startTime = System.currentTimeMillis();
 
-        QuickSort.sort(nums, 0, nums.length-1); //Calls on any sort desired
+        int index = QuickerThanQuickSort.quicksort(nums, 0, nums.length-1); //Calls on any sort desired
 
         // the code being measured ends
         long endTime = System.currentTimeMillis();
         long timeElapsed = endTime - startTime;
 
         System.out.println("\nExecution time in milliseconds: " + timeElapsed);
-
-        //System.out.println(Arrays.toString(nums));
+        System.out.println(index);
+        // System.out.println(Arrays.toString(nums));
 
     }
 }
